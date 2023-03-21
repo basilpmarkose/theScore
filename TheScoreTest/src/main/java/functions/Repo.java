@@ -18,7 +18,7 @@ public class Repo {
 		stream = new FileInputStream(RepositoryFile);
 		propertyFile.load(stream);
 	}
-	
+
 	public String getValue(String locatorName)
 	{
 		String locatorProperty = propertyFile.getProperty(locatorName);

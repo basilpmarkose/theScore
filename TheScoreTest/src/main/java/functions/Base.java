@@ -39,7 +39,6 @@ public class Base {
 			driver = new AppiumDriver<MobileElement>(url,cap);
 			System.out.println("Application started...");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
